@@ -1,0 +1,341 @@
+/* ===================================================
+   VEYRA AI — ASSETS SYSTEM
+   Multimodal Coordinated Media Cards
+   =================================================== */
+
+.assets-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.assets-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.assets-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--color-surface-1);
+  padding: 0.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.asset-tab {
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.asset-tab:hover {
+  color: var(--color-text-primary);
+}
+
+.asset-tab.active {
+  background-color: var(--color-surface-2);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.assets-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.assets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 1.25rem;
+}
+
+/* --- COMMON ASSET CARD STYLING --- */
+.asset-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+}
+
+.asset-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.asset-card-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface-1);
+}
+
+.asset-meta-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.asset-platform-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-badge-neutral-bg);
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-text-primary);
+}
+
+.asset-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  padding: 0.85rem 1.25rem 0.25rem;
+}
+
+.asset-card-body {
+  padding: 0.75rem 1.25rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.asset-card-actions {
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface-1);
+}
+
+.asset-action-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --- TEXT ASSET CARD SPECIFICS --- */
+.text-hook-box {
+  background: rgba(124, 58, 237, 0.08);
+  border-left: 3px solid var(--color-primary);
+  padding: 0.6rem 0.85rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.text-copy-content {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  white-space: pre-line;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 0.3rem;
+}
+
+.text-cta-box {
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+  border-top: 1px dashed var(--color-border-subtle);
+  padding-top: 0.4rem;
+}
+
+.text-hashtags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.hashtag-chip {
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  font-family: var(--font-family-mono);
+}
+
+/* --- IMAGE ASSET CARD SPECIFICS --- */
+.image-viewport-wrapper {
+  width: 100%;
+  position: relative;
+  background: #000000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  max-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-overlay-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+  padding: 1rem 1rem 0.75rem;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.image-overlay-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.image-overlay-pill {
+  align-self: flex-start;
+  font-size: 0.68rem;
+  background: rgba(124, 58, 237, 0.8);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+/* --- VIDEO ASSET CARD SPECIFICS --- */
+.video-viewport-wrapper {
+  width: 100%;
+  position: relative;
+  background: #000000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-preview-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-play-overlay {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.85);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 24px rgba(124, 58, 237, 0.5);
+  transition: transform var(--transition-fast);
+}
+
+.video-play-overlay:hover {
+  transform: scale(1.1);
+}
+
+.video-subtitles-box {
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+.subtitle-entry {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.subtitle-time {
+  font-family: var(--font-family-mono);
+  font-size: 0.7rem;
+  color: var(--color-secondary);
+}
+
+/* --- AUDIO ASSET CARD SPECIFICS --- */
+.audio-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.audio-waveform-container {
+  height: 72px;
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.waveform-bar {
+  flex: 1;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  min-height: 4px;
+  transition: height 0.15s ease, background-color 0.15s ease;
+  opacity: 0.85;
+}
+
+.waveform-bar.active {
+  background: var(--color-secondary);
+  box-shadow: 0 0 8px var(--color-secondary);
+}
+
+.audio-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audio-transcript-box {
+  background: var(--color-badge-neutral-bg);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.825rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}

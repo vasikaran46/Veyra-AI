@@ -1,0 +1,310 @@
+/* ===================================================
+   VEYRA AI — LAYOUT ARCHITECTURE
+   Three-Column High-Density Creative Canvas
+   =================================================== */
+
+.app-root {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-bg-canvas);
+}
+
+/* ---------------------------------------------------
+   1. LEFT NAVIGATION RAIL
+   --------------------------------------------------- */
+.app-nav {
+  width: 240px;
+  min-width: 240px;
+  height: 100%;
+  background-color: var(--color-surface-1);
+  border-right: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 0.85rem;
+  z-index: 40;
+  transition: width var(--transition-normal);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.nav-logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: 0 0 16px var(--color-primary-glow);
+  flex-shrink: 0;
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-brand-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+
+.nav-brand-tagline {
+  font-size: 0.7rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.02em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1.25rem;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.nav-item:hover {
+  background-color: var(--color-badge-neutral-bg);
+  color: var(--color-text-primary);
+}
+
+.nav-item.active {
+  background-color: var(--color-surface-2);
+  color: var(--color-text-primary);
+  border-color: var(--color-border-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-item-icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.nav-item.active .nav-item-icon {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.nav-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* ---------------------------------------------------
+   2. MAIN CENTER CONTENT & CANVAS
+   --------------------------------------------------- */
+.app-main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-bg-canvas);
+}
+
+.main-header {
+  height: 64px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  background-color: var(--color-glass-base);
+  backdrop-filter: blur(var(--color-glass-blur));
+  z-index: 30;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-campaign-info {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.header-campaign-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.main-scrollable {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1.5rem 140px 1.5rem; /* bottom padding ensures super prompt bar never overlaps */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------------------------------------------------
+   3. RIGHT CONTEXT INSPECTOR DOCK
+   --------------------------------------------------- */
+.app-inspector {
+  width: 350px;
+  min-width: 350px;
+  height: 100%;
+  background-color: var(--color-surface-1);
+  border-left: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  z-index: 35;
+  transition: transform var(--transition-normal);
+}
+
+.inspector-header {
+  padding: 1.25rem 1.25rem 0.85rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.inspector-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inspector-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.2rem;
+}
+
+.inspector-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ---------------------------------------------------
+   4. BOTTOM SUPER PROMPT BAR DOCK
+   --------------------------------------------------- */
+.prompt-dock-wrapper {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 240px; /* offset from nav rail */
+  right: 350px; /* offset from inspector */
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 50;
+  transition: all var(--transition-normal);
+}
+
+.prompt-dock {
+  width: 94%;
+  max-width: 900px;
+  background-color: var(--prompt-dock-bg);
+  backdrop-filter: blur(28px);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-border-base);
+  padding: 0.75rem 1rem 0.65rem;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.prompt-dock:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg), 0 0 20px var(--color-primary-glow);
+}
+
+.prompt-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.prompt-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  height: 28px;
+  max-height: 120px;
+}
+
+.prompt-textarea::placeholder {
+  color: var(--color-text-dim);
+}
+
+.prompt-dock-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.prompt-chips {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}

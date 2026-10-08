@@ -1,0 +1,247 @@
+/* ===================================================
+   VEYRA AI — WORKSPACE & ORCHESTRATION PIPELINE
+   Visual Stepper, Context Intelligence & Strategy Plan
+   =================================================== */
+
+/* --- CONTEXT INTELLIGENCE BANNER --- */
+.context-banner {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.context-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-primary-gradient);
+}
+
+.context-banner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.context-concept-pill {
+  font-family: var(--font-family-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-secondary);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.context-grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.context-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.context-meta-label {
+  font-size: 0.72rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.context-meta-value {
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- REAL-TIME 8-STAGE ORCHESTRATION STEPPER --- */
+.stepper-card {
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stepper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepper-title {
+  font-size: 0.925rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stepper-progress-bar {
+  height: 4px;
+  background: var(--color-badge-neutral-bg);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.stepper-progress-fill {
+  height: 100%;
+  background: var(--color-primary-gradient);
+  transition: width 0.4s ease;
+}
+
+.stepper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+}
+
+.step-node {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  transition: all var(--transition-fast);
+}
+
+.step-node.completed {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.step-node.in_progress {
+  border-color: var(--color-secondary);
+  background: rgba(6, 182, 212, 0.08);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
+}
+
+.step-node.pending {
+  opacity: 0.65;
+}
+
+.step-node-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-node.completed .step-node-icon {
+  background: var(--color-success);
+  color: #FFFFFF;
+}
+
+.step-node.in_progress .step-node-icon {
+  border: 2px solid var(--color-secondary);
+  border-top-color: transparent;
+  animation: spinRing 0.8s linear infinite;
+}
+
+.step-node.pending .step-node-icon {
+  border: 1px dashed var(--color-text-dim);
+  color: var(--color-text-dim);
+}
+
+.step-node-title {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* --- AI CONTENT STRATEGY PLAN --- */
+.strategy-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.strategy-pillars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.strategy-pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.strategy-pillar-bullet {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* --- CAMPAIGN READY CELEBRATION BANNER --- */
+.celebration-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.12) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+  animation: slideUpFade 0.4s ease;
+}
+
+.celebration-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.celebration-icon {
+  font-size: 2rem;
+}
+
+.celebration-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.celebration-subtitle {
+  font-size: 0.825rem;
+  color: var(--color-text-secondary);
+}

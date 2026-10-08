@@ -1,0 +1,75 @@
+/* ===================================================
+   VEYRA AI — RESPONSIVE DESIGN
+   Desktop (1440px+), Tablet (768px-1200px), Mobile (<768px)
+   =================================================== */
+
+@media (max-width: 1200px) {
+  .app-inspector {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-inspector.open {
+    transform: translateX(0);
+  }
+
+  .prompt-dock-wrapper {
+    right: 1.5rem;
+  }
+
+  .stepper-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .app-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-nav.open {
+    transform: translateX(0);
+  }
+
+  .prompt-dock-wrapper {
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.85rem;
+  }
+
+  .assets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-scrollable {
+    padding: 1rem 1rem 160px 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-campaign-title {
+    font-size: 0.95rem;
+  }
+
+  .stepper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prompt-textarea {
+    font-size: 0.875rem;
+  }
+
+  .prompt-dock {
+    border-radius: var(--radius-lg);
+    padding: 0.5rem 0.75rem;
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "app": {
+    "name": "VEYRA AI",
+    "tagline": "From Context to Creation",
+    "concept": "ONE CONTEXT → MULTIPLE MEDIA → ONE COORDINATED CAMPAIGN",
+    "demo_badge": "DEMO MODE",
+    "live_badge": "AI LIVE"
+  },
+  "nav": {
+    "workspace": "Workspace",
+    "campaigns": "Campaigns",
+    "library": "Content Library",
+    "history": "History",
+    "brand": "Brand Memory",
+    "settings": "Settings"
+  },
+  "workspace": {
+    "title": "Creative Workspace",
+    "active_campaign": "Active Campaign",
+    "new_campaign": "New Campaign",
+    "approve_all": "Approve All Assets",
+    "campaign_ready": "Campaign Ready",
+    "strategy_plan": "AI Content Strategy Plan",
+    "stepper_title": "Real-time AI Orchestration Pipeline",
+    "assets_heading": "Coordinated Multimodal Assets",
+    "tabs_all": "All Assets",
+    "filter_text": "Text",
+    "filter_image": "Images",
+    "filter_video": "Videos",
+    "filter_audio": "Audio"
+  },
+  "inspector": {
+    "title": "Context Inspector",
+    "subtitle": "The core intelligence driving all media generation",
+    "subject": "Campaign Subject",
+    "objective": "Objective",
+    "audience": "Target Audience",
+    "platforms": "Target Platforms",
+    "tone": "Tone & Voice",
+    "language": "Content Languages",
+    "region": "Region & Market",
+    "brand": "Brand Memory Context",
+    "content_types": "Content Types",
+    "update_btn": "Update Context Engine"
+  },
+  "prompt": {
+    "placeholder": "Tell Veyra what you want to create...",
+    "generate": "Generate Campaign",
+    "generating": "Orchestrating...",
+    "quick_label": "Quick Prompts:"
+  },
+  "asset": {
+    "edit": "Edit",
+    "regenerate": "Regenerate",
+    "translate": "Translate",
+    "approve": "Approve",
+    "approved": "Approved",
+    "ready_review": "Ready for Review",
+    "generating": "Generating",
+    "char_count": "chars",
+    "aspect_ratio": "Ratio",
+    "duration": "Duration",
+    "storyboard": "Visual Storyboard",
+    "subtitles": "Subtitles",
+    "waveform": "Voice Waveform",
+    "play": "Play Audio",
+    "pause": "Pause Audio"
+  },
+  "brand": {
+    "title": "Brand Memory",
+    "subtitle": "Veyra uses your brand context across all future generations",
+    "name": "Brand Name",
+    "description": "Brand Mission & Narrative",
+    "primary_color": "Primary Color",
+    "secondary_color": "Secondary Accent",
+    "voice_tone": "Voice & Tone Attributes",
+    "guidelines": "Creative Guidelines",
+    "save": "Save Brand Memory"
+  },
+  "campaigns": {
+    "title": "All Campaigns",
+    "total": "Total Campaigns",
+    "open": "Open in Workspace",
+    "approved_count": "Approved Assets",
+    "status": "Status"
+  },
+  "library": {
+    "title": "Content Library",
+    "search_placeholder": "Search copy, prompts, platforms...",
+    "all_types": "All Media Types",
+    "all_statuses": "All Statuses",
+    "all_platforms": "All Platforms"
+  },
+  "history": {
+    "title": "Generation History",
+    "prompt_label": "Prompt",
+    "reopen": "Reopen in Workspace"
+  },
+  "settings": {
+    "title": "System Settings & Models",
+    "api_status": "API Credentials Status",
+    "groq_status": "Groq API (Fast Reasoning & Copy)",
+    "replicate_status": "Replicate API (Visual & Video Media)",
+    "demo_mode": "Force Demo Mode",
+    "text_model": "Text Reasoning Model",
+    "image_model": "Image Model",
+    "video_model": "Video Model",
+    "save": "Save Settings"
+  }
+}

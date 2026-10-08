@@ -1,0 +1,110 @@
+{
+  "app": {
+    "name": "VEYRA AI",
+    "tagline": "संदर्भ से सृजन तक",
+    "concept": "एक संदर्भ → एकाधिक मीडिया → एक समन्वित अभियान",
+    "demo_badge": "डेमो मोड",
+    "live_badge": "एआई लाइव"
+  },
+  "nav": {
+    "workspace": "कार्यक्षेत्र",
+    "campaigns": "अभियान",
+    "library": "सामग्री लाइब्रेरी",
+    "history": "इतिहास",
+    "brand": "ब्रांड मेमोरी",
+    "settings": "सेटिंग्स"
+  },
+  "workspace": {
+    "title": "रचनात्मक कार्यक्षेत्र",
+    "active_campaign": "सक्रिय अभियान",
+    "new_campaign": "नया अभियान",
+    "approve_all": "सभी स्वीकृत करें",
+    "campaign_ready": "अभियान तैयार है!",
+    "strategy_plan": "एआई सामग्री रणनीति योजना",
+    "stepper_title": "वास्तविक समय एआई निर्माण चरण",
+    "assets_heading": "समन्वित मल्टीमॉडल संपत्ति",
+    "tabs_all": "सभी संपत्ति",
+    "filter_text": "टेक्स्ट (Text)",
+    "filter_image": "छवियां (Image)",
+    "filter_video": "वीडियो (Video)",
+    "filter_audio": "ऑडियो (Audio)"
+  },
+  "inspector": {
+    "title": "संदर्भ निरीक्षक",
+    "subtitle": "सभी मीडिया निर्माण को संचालित करने वाली मुख्य बुद्धिमत्ता",
+    "subject": "अभियान का विषय",
+    "objective": "उद्देश्य",
+    "audience": "लक्षित दर्शक",
+    "platforms": "लक्षित प्लेटफॉर्म",
+    "tone": "टोन और शैली",
+    "language": "सामग्री भाषाएं",
+    "region": "क्षेत्र और बाजार",
+    "brand": "ब्रांड संदर्भ",
+    "content_types": "सामग्री के प्रकार",
+    "update_btn": "संदर्भ अपडेट करें"
+  },
+  "prompt": {
+    "placeholder": "वेरा को बताएं कि आप क्या बनाना चाहते हैं...",
+    "generate": "अभियान बनाएं",
+    "generating": "निर्माण जारी है...",
+    "quick_label": "त्वरित सुझाव:"
+  },
+  "asset": {
+    "edit": "संपादित करें",
+    "regenerate": "पुनर्निर्मित करें",
+    "translate": "अनुवाद करें",
+    "approve": "स्वीकृत करें",
+    "approved": "स्वीकृत",
+    "ready_review": "समीक्षा के लिए तैयार",
+    "generating": "उत्पन्न हो रहा है",
+    "char_count": "अक्षर",
+    "aspect_ratio": "अनुपात",
+    "duration": "अवधि",
+    "storyboard": "विज़ुअल स्टोरीबोर्ड",
+    "subtitles": "उपशीर्षक",
+    "waveform": "ध्वनि वेवफॉर्म",
+    "play": "चलाएं",
+    "pause": "रोकें"
+  },
+  "brand": {
+    "title": "ब्रांड मेमोरी",
+    "subtitle": "वेरा भविष्य के सभी निर्माणों में आपके ब्रांड संदर्भ का उपयोग करता है",
+    "name": "ब्रांड नाम",
+    "description": "ब्रांड उद्देश्य",
+    "primary_color": "प्राथमिक रंग",
+    "secondary_color": "द्वितीयक रंग",
+    "voice_tone": "आवाज़ की टोन",
+    "guidelines": "दिशानिर्देश",
+    "save": "सहेजें"
+  },
+  "campaigns": {
+    "title": "सभी अभियान",
+    "total": "कुल अभियान",
+    "open": "कार्यक्षेत्र में खोलें",
+    "approved_count": "स्वीकृत संपत्ति",
+    "status": "स्थिति"
+  },
+  "library": {
+    "title": "सामग्री लाइब्रेरी",
+    "search_placeholder": "खोजें...",
+    "all_types": "सभी प्रकार",
+    "all_statuses": "सभी स्थितियाँ",
+    "all_platforms": "सभी प्लेटफॉर्म"
+  },
+  "history": {
+    "title": "निर्माण इतिहास",
+    "prompt_label": "प्रॉम्प्ट",
+    "reopen": "पुनः खोलें"
+  },
+  "settings": {
+    "title": "सिस्टम सेटिंग्स",
+    "api_status": "एपीआई स्थिति",
+    "groq_status": "Groq API (त्वरित तर्क और कॉपी)",
+    "replicate_status": "Replicate API (दृश्य और वीडियो)",
+    "demo_mode": "डेमो मोड",
+    "text_model": "टेक्स्ट मॉडल",
+    "image_model": "छवि मॉडल",
+    "video_model": "वीडियो मॉडल",
+    "save": "सहेजें"
+  }
+}

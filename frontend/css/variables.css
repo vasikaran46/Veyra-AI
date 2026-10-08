@@ -1,0 +1,115 @@
+/* ===================================================
+   VEYRA AI — DESIGN SYSTEM TOKENS
+   Visual Source of Truth: Google Stitch Design Spec
+   Warm Beige + Brown + White (Light) & Obsidian Glass (Dark)
+   =================================================== */
+
+:root {
+  /* Fonts */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+
+  /* Sizing & Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Accents & Energy (Universal) */
+  --color-primary: #7C3AED;
+  --color-primary-hover: #6D28D9;
+  --color-primary-glow: rgba(124, 58, 237, 0.35);
+  --color-primary-gradient: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%);
+  --color-secondary: #06B6D4;
+  --color-secondary-hover: #0891B2;
+  --color-secondary-glow: rgba(6, 182, 212, 0.3);
+  --color-success: #10B981;
+  --color-success-bg: rgba(16, 185, 129, 0.12);
+  --color-warning: #F59E0B;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-error: #EF4444;
+  --color-error-bg: rgba(239, 68, 68, 0.12);
+}
+
+/* ===================================================
+   DARK MODE (Stitch Obsidian & OLED Depth)
+   =================================================== */
+[data-theme="dark"], :root:not([data-theme="light"]) {
+  color-scheme: dark;
+
+  --color-bg-canvas: #0B0D13;
+  --color-bg-base: #10131D;
+  --color-surface-1: #11141E;
+  --color-surface-2: #181C2A;
+  --color-surface-elevated: #272A34;
+  --color-surface-highest: #32343F;
+
+  --color-glass-base: rgba(24, 28, 42, 0.65);
+  --color-glass-active: rgba(30, 36, 56, 0.85);
+  --color-glass-blur: 20px;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-base: rgba(255, 255, 255, 0.10);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+  --color-border-focus: #06B6D4;
+
+  --color-text-primary: #E0E2F0;
+  --color-text-secondary: #CCC3D8;
+  --color-text-muted: rgba(224, 226, 240, 0.60);
+  --color-text-dim: rgba(224, 226, 240, 0.35);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.40);
+  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.50);
+  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.70);
+  --shadow-glow: 0 0 30px rgba(124, 58, 237, 0.25);
+
+  --prompt-dock-bg: rgba(24, 28, 42, 0.82);
+  --input-bg: rgba(17, 20, 30, 0.90);
+  --badge-neutral-bg: rgba(255, 255, 255, 0.06);
+  --badge-neutral-text: #CCC3D8;
+}
+
+/* ===================================================
+   LIGHT MODE (Stitch Warm Beige + Brown + White)
+   =================================================== */
+[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg-canvas: #FAF8F5;
+  --color-bg-base: #F5EFEB;
+  --color-surface-1: #EFE8E1;
+  --color-surface-2: #FFFFFF;
+  --color-surface-elevated: #ECE4DA;
+  --color-surface-highest: #E4DAD0;
+
+  --color-glass-base: rgba(255, 255, 255, 0.85);
+  --color-glass-active: rgba(255, 255, 255, 0.95);
+  --color-glass-blur: 16px;
+
+  --color-border-subtle: rgba(120, 100, 85, 0.10);
+  --color-border-base: rgba(120, 100, 85, 0.18);
+  --color-border-strong: rgba(120, 100, 85, 0.32);
+  --color-border-focus: #7C3AED;
+
+  --color-text-primary: #2D231E;
+  --color-text-secondary: #5C4D44;
+  --color-text-muted: #7E6C62;
+  --color-text-dim: #A8988E;
+
+  --shadow-sm: 0 2px 8px rgba(74, 62, 56, 0.05);
+  --shadow-md: 0 8px 24px -4px rgba(74, 62, 56, 0.10);
+  --shadow-lg: 0 20px 40px -10px rgba(74, 62, 56, 0.15);
+  --shadow-glow: 0 0 25px rgba(124, 58, 237, 0.15);
+
+  --prompt-dock-bg: rgba(255, 255, 255, 0.92);
+  --input-bg: #FAF8F5;
+  --badge-neutral-bg: rgba(120, 100, 85, 0.08);
+  --badge-neutral-text: #5C4D44;
+}
