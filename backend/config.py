@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
 
     # Fallback & Demo
-    FORCE_DEMO_MODE: bool = os.getenv("DEMO_MODE", "true").lower() == "true"
+    FORCE_DEMO_MODE: bool = os.getenv("DEMO_MODE", "false").lower() == "true"
 
     @property
     def is_demo_mode(self) -> bool:

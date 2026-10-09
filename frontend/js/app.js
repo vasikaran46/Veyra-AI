@@ -99,19 +99,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.warn('Could not fetch default campaign, using offline demo:', e);
   }
 
-  // Inspect system status for UI badge
+  // Inspect system status
   try {
     const cfg = await API.getSystemConfig();
-    const modeBadge = document.getElementById('nav-mode-badge');
-    if (modeBadge) {
-      if (cfg.demo_mode) {
-        modeBadge.className = 'badge badge-ready';
-        modeBadge.textContent = I18n.t('app.demo_badge', 'DEMO MODE');
-      } else {
-        modeBadge.className = 'badge badge-approved';
-        modeBadge.textContent = I18n.t('app.live_badge', 'AI LIVE');
-      }
-    }
+    console.log(`Veyra AI initialized — Mode: ${cfg.demo_mode ? 'Demo Mode' : 'Live AI'}`);
   } catch (e) {
     console.warn('Could not fetch system config:', e);
   }

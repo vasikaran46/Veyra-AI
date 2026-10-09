@@ -72,21 +72,18 @@
     </div>
 
     <div class="nav-footer">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <span id="nav-mode-badge" class="badge badge-ready" data-i18n="app.demo_badge">DEMO MODE</span>
-        <button class="btn btn-ghost btn-icon theme-toggle-btn" title="Toggle Theme">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
-
-      <div class="nav-controls-row">
-        <select class="form-select locale-select" style="padding:0.35rem 0.6rem; font-size:0.8rem;">
+      <div class="nav-controls-row" style="display:flex; justify-content:space-between; align-items:center; gap:0.5rem;">
+        <select class="form-select locale-select" style="padding:0.35rem 0.6rem; font-size:0.8rem; flex:1;">
           <option value="en">English (US)</option>
           <option value="ta">தமிழ் (Tamil)</option>
           <option value="hi">हिंदी (Hindi)</option>
         </select>
+        <button class="btn btn-ghost btn-icon theme-toggle-btn" title="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
       </div>
     </div>
+
   </aside>
 
   <!-- ===================================================

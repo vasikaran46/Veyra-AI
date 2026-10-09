@@ -338,7 +338,7 @@ HOST=127.0.0.1
 DEBUG=true
 
 # Demo Mode (Set to false when using live API keys)
-DEMO_MODE=true
+DEMO_MODE=false
 ```
 
 > 💡 **Tip:** If `DEMO_MODE=true` (or if API keys are left empty), Veyra AI runs in **Demo Mode**. You can launch and test all features immediately without any API keys!
@@ -420,9 +420,8 @@ Once running:
 │ • Brand      │  --------------------------------------------------------------------------------  │
 │ • Settings   │  📊 Content Strategy Plan & Cross-Platform Synergy Matrix                          │
 │              │  --------------------------------------------------------------------------------  │
-│ [DEMO MODE]  │  🗂️ Multimodal Asset Grid                                                          │
-│ [🌙 Theme]   │  [All Assets] [Instagram] [LinkedIn] [YouTube Shorts]                              │
-│ [🌐 Lang]    │  ┌───────────────┐ ┌───────────────┐ ┌───────────────┐ ┌───────────────┐          │
+│ [🌙 Theme]   │  🗂️ Multimodal Asset Grid                                                          │
+│ [🌐 Lang]    │  [All Assets] [Instagram] [LinkedIn] [YouTube Shorts]                              │
 │              │  │ IG Copy (Ta)  │ │ LinkedIn Copy │ │ Visual Poster │ │ Kinetic Video │          │
 │              │  │ [Edit][Regen] │ │ [Edit][Regen] │ │ [View][Regen] │ │ [Play][Regen] │          │
 │              │  └───────────────┘ └───────────────┘ └───────────────┘ └───────────────┘          │
